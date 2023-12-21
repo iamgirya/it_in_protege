@@ -1,0 +1,954 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#"
+     xml:base="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеет -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеет">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#естьВ"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы"/>
+        <rdfs:label>имеет</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Требует -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Требует">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Знания"/>
+        <rdfs:label>требует</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#естьВ -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#естьВ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#осложнён -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#осложнён">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеет"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#приоритетнаДля -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#приоритетнаДля">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Личность"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#создаёт -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#создаёт">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеет"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+        <rdfs:label>работает_над</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#требует_общения_в_виде -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#требует_общения_в_виде">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеет"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#требуется_рынку_на_уровне -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#требуется_рынку_на_уровне">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеет"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеются_ли_олимпиады -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Имеются_ли_олимпиады">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Может_быть_научной -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Может_быть_научной">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Пишет_код -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Пишет_код">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средний_возраст -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средний_возраст">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:label>.</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средний_оклад -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средний_оклад">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#АйТи -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#АйТи"/>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Знания -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Знания">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#АйТи"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Личность"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Личность -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Личность">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#АйТи"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Образование -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Образование">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Знания"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#АйТи"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Потребность_на_рынке -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Потребность_на_рынке">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Особенности_работы"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#АйТи"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Личность"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Темперамент -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Темперамент">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Личность"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Знания"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#. -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#."/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#ML-инженер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#ML-инженер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высшее_образование"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Математика"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сбой"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Железо"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интуиция"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обучаемость"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сангвиник"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сложность"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Данные"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_со_своей_командой"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высокая"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Аккуратность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Аккуратность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Аналитик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Аналитик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Математика"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бизнес_проблемы"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интуиция"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Оптимизация"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сангвиник"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Скорость_работы"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Данные"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_со_своей_командой"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Архитектуры_приложений -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Архитектуры_приложений">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Баги -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Баги">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бизнес_проблемы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бизнес_проблемы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бэкендер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бэкендер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Архитектуры_приложений"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Баги"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Внимательность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Меланхолик"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обучаемость"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Оптимизация"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Код"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_со_своей_командой"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Внимательность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Внимательность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высокая -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высокая">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Потребность_на_рынке"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высшее_образование -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высшее_образование">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Образование"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Данные -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Данные">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Девопс -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Девопс">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Архитектуры_приложений"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_использования_приложений"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_работы_в_сфере_IT"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сбой"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Дотошность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Машины"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Меланхолик"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обучаемость"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Оптимизация"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Процессы"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обработка_заявок"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Дотошность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Дотошность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Железо -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Железо">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интуиция -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интуиция">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Код -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Код">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Команда -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Команда">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Компьютерные_составляющие -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Компьютерные_составляющие">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Красота -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Красота">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Образование"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Математика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Математика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Машины -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Машины">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Меланхолик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Меланхолик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Темперамент"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Микроконтроллеры -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Микроконтроллеры">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Мобильщик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Мобильщик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Баги"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обучаемость"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общительность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сангвиник"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Скорость_работы"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Творчество"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Код"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_с_другими_разработчиками"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">140</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Моторика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Моторика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+        <rdfs:label>Техника</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Низкая -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Низкая">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Потребность_на_рынке"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обработка_заявок -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обработка_заявок">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обучаемость -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обучаемость">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_с_другими_разработчиками -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_с_другими_разработчиками">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия"/>
+        <rdfs:label>Общение_со_смежными_командами</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_с_конечным_пользователем -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_с_конечным_пользователем">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_со_своей_командой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_со_своей_командой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общительность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общительность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Оптимизация -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Оптимизация">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_использования_приложений -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_использования_приложений">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_работы_в_сфере_IT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_работы_в_сфере_IT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Образование"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Приложение -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Приложение">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Проджект-менеджер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Проджект-менеджер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высшее_образование"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_и_менеджмент"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бизнес_проблемы"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интуиция"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общительность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Стрессоустойчивость"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Холерик"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Команда"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_командой"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Низкая"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Пишет_код>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Проект -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Проект">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Процессы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Процессы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сангвиник -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сангвиник">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Темперамент"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сбой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сбой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Серверы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Серверы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Объект_работы"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сисадмин -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сисадмин">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высшее_образование"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Компьютерные_составляющие"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сбой"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Аккуратность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Железо"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Меланхолик"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Стрессоустойчивость"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Серверы"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обработка_заявок"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Пишет_код>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Скорость_работы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Скорость_работы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сложность -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сложность">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Потребность_на_рынке"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Стрессоустойчивость -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Стрессоустойчивость">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Таланты"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Творчество -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Творчество">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Тестировщик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Тестировщик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_использования_приложений"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Дотошность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интуиция"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Красота"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Флегматик"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Приложение"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Обработка_заявок"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Низкая"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Техлид -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Техлид">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Архитектуры_приложений"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Опыт_работы_в_сфере_IT"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_и_менеджмент"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Бизнес_проблемы"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Фрод"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Внимательность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общительность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Оптимизация"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Флегматик"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Команда"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Процессы"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_командой"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высокая"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Интерес"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_и_менеджмент -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_и_менеджмент">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_командой -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Управление_командой">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Вид_социального_взаимодействия"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Физика -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Физика">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Теория"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Флегматик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Флегматик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Темперамент"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Фрод -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Фрод">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Осложнения"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Фронтендер -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Фронтендер">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Информатика"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Курсы"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Баги"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Красота"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общительность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сангвиник"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Скорость_работы"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Творчество"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Код"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_с_другими_разработчиками"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Средняя"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155</Средний_оклад>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Холерик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Холерик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Темперамент"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Эмбедед-разработчик -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Эмбедед-разработчик">
+        <rdf:type rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Профессия"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Высшее_образование"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Математика"/>
+        <Требует rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Физика"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Баги"/>
+        <осложнён rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Сбой"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Внимательность"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Железо"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Машины"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Меланхолик"/>
+        <приоритетнаДля rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Моторика"/>
+        <создаёт rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Микроконтроллеры"/>
+        <требует_общения_в_виде rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Общение_со_своей_командой"/>
+        <требуется_рынку_на_уровне rdf:resource="http://www.semanticweb.org/danek/ontologies/2023/11/it-professions-chooser#Низкая"/>
+        <Имеются_ли_олимпиады rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Имеются_ли_олимпиады>
+        <Может_быть_научной rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Может_быть_научной>
+        <Пишет_код rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</Пишет_код>
+        <Средний_оклад rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</Средний_оклад>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
